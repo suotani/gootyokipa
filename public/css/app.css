@@ -1,0 +1,37 @@
+#uploadedImage img{
+  width: 300px;
+  margin-top: 10px;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex .hand-input{
+  width: 200px;
+}
+
+.create-form .form-control{
+  max-width: 500px;
+}
+.create-form .form-group{
+  margin-bottom: 50px;
+}
+
+.create-form .form-check{
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+}
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+}
+.products .card{
+  margin-right: 10px;
+}
+
+.pointer{
+  cursor: pointer;
+}
