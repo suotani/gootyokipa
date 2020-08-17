@@ -5,12 +5,17 @@
 <div class="main">
   <div class="products">
   @foreach($products as $product)
-    <div class="card" style="width: 18rem;">
-    <img src="{{$product->path}}" class="card-img-top" alt="..."　width="300px" height="300px">
+    <div class="card">
+    <img src="{{$product->path}}" class="card-img-top" alt="..."　width="30%" height="200px">
       <div class="card-body">
         <h5 class="card-title">{{$product->title}}</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p>
+          <img src="images/{{$product->hand_code('left')}}.png">
+          <img src="images/{{$product->hand_code('right')}}.png">
+        </p>
+        <a href="{{route('product', $product)}}" class="btn btn-primary link_to_show">
+          うたってみる
+        </a>
       </div>
     </div>
   @endforeach

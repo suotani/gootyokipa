@@ -14,6 +14,12 @@ class ProductsController extends Controller
         return view("products.index", compact("products"));
     }
 
+    public function show(Request $req)
+    {
+        $product = Product::find($req->id);
+        return view("products.show", compact("product"));
+    }
+
     public function create()
     {
         return view("products.create");

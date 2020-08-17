@@ -1,3 +1,20 @@
+html{
+  background: url("../images/products.png");
+  background-size: 800px;
+  height: 100%;
+}
+body{
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 100%;
+}
+main{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.main{
+  margin-top: 30px;
+}
+
 #uploadedImage img{
   width: 300px;
   margin-top: 10px;
@@ -27,11 +44,39 @@
 .products{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .products .card{
   margin-right: 10px;
+  margin-bottom: 20px;
+  width: 23%;
+}
+
+.products .card-body img{
+  width: 50px;
 }
 
 .pointer{
   cursor: pointer;
+}
+
+.link_to_show{
+  width: 100%;
+}
+
+/* -------------products.show---------------- */
+
+.show-song .card{
+  margin: auto;
+}
+
+.show-song .card .card-title img{
+  width: 50px;
+}
+
+@media screen and (max-width:480px) { 
+  /*　画面サイズが480pxまではここを読み込む　*/
+  .products .card{
+    width: 100%;
+  }
 }
